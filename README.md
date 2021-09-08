@@ -1,1 +1,1 @@
-# rsschool-cv
+https://holypolli.github.io/rsschool-cv/cv
