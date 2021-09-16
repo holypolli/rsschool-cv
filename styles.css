@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: rgb(240, 241, 223);
+    color: #2d323b;
+    /* font-family: 'Roboto', sans-serif; 
+    font-size: 17px; */
+    font: normal 16px 'Roboto', sans-serif; 
+}
+
+a {
+   color:cadetblue;
+   text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: olive;
+}
+
+a:visited {
+    color: grey;
+}
+.cv-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+margin-bottom: 20px;
+}
+
+.info p {
+    color: rgb(159, 160, 159);
+    margin: 0;
+/* letter-spacing: 1px;
+word-spacing: 5px; */
+}
+
+.container {
+max-width: 700px; /* максимальная ширина блоков */
+margin: auto;
+}
+
+/* .contacts {}
+background:  */
+/* Box Model - примеры */
+/* padding: 5px ;
+border: 5px solid blueviolet;
+margin: 5px; */  
+
+
+.card {
+    padding: 15px 20px;
+    background: #cbe4ba;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.list {
+    padding: 0;
+    border: 0; 
+}
+
+.list li {
+    margin-bottom: 10px;
+}
