@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
+    height: 100%;
     background-color: rgb(240, 241, 223);
     color: #2d323b;
     /* font-family: 'Roboto', sans-serif; 
     font-size: 17px; */
     font: normal 16px 'Roboto', sans-serif; 
+    padding-top: 80px;
 }
 
 a {
@@ -73,4 +75,136 @@ margin: 5px; */
 
 .list li {
     margin-bottom: 10px;
+}
+
+/* Бургер-меню */
+.wrapper {
+
+}
+
+.burgercontainer {
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.header:before{
+content:'';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(255, 234, 44);
+z-index: 2;
+}
+
+.header_body {
+    position: relative;
+/*     z-index: 2; */
+    display: flex;
+    justify-content: space-between; /*  раскидать элементы по сторонам */
+    height: 80px;
+    align-items: center;
+}
+
+.header_logo {
+flex: 0px 0px 60px;
+/* max-width: 60px; */
+display: block;
+overflow: hidden;
+position: relative;
+z-index: 3;
+}
+
+.header_logo img{
+max-width: 60px;
+border-radius: 50%;
+display: block;
+}
+.header_burger {
+    display: none;
+}
+.header_menu {
+}
+
+.header_list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+
+}
+
+.header_list li {
+list-style: none;
+margin: 0px 0px 0px 20px; /* расстояние между пунктами в меню */
+}
+
+.header_link {
+    color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+}
+@media (max-width:767px){
+/*     .header_logo {
+        flex: 0px 0px 40px;
+    }
+    .header_body {
+        height: 50px;
+    } */
+    .header_burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px; 
+        position: relative;
+        z-index: 3;
+    }
+    .header_burger span{
+        position: absolute;
+        background-color: #000;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+    .header_burger:before,
+    .header_burger:after{
+        content: '';
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0px;
+    }
+    .header_burger:before{
+        top: 0;
+    }
+    .header_burger:after{
+        bottom: 0;
+    }
+    .header_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(166, 189, 209);
+        padding: 70px 0px 0px 0px;
+    }
+    .header_list{
+        display: block;
+        position: fixed;
+    }
+    .header_list li{
+        margin: 0px 0px 20px 0px;
+    }
 }
